@@ -1,0 +1,91 @@
+* {
+  font-family: "Inter", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #243e63;
+}
+
+body {
+  background-color: #fff;
+}
+
+section {
+  padding: 0 32px;
+}
+
+/* Nav wrapper */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 0;
+  width: 100%;
+}
+
+/* Row: logo on left, links on right */
+.row {
+  display: flex;
+  justify-content: space-between; /* pushes left and right apart */
+  align-items: center;            /* vertically centers everything */
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Brand (logo + title side by side) */
+.nav__logos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav__logo--img {
+  height: 40px;
+  width: 40px;
+}
+
+.nav__logo--title {
+  font-size: 24px;
+  font-weight: 900;
+  margin-left: 12px;
+  padding-bottom: 2px ;
+  letter-spacing: 0.6px;
+}
+
+/* Nav links */
+.nav__links ul {
+  display: flex;
+  justify-content: flex-end; /* keeps links aligned to the right */
+  align-items: center;
+}
+
+.nav__links li {
+  list-style: none;
+  margin-left: 24px;
+}
+
+.nav__link {
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 4px;
+  letter-spacing: 0.35px;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  text-decoration: none
+  
+}
+
+/* ADD LINK HOVER EFFECTS HERE*/
+
+/* Sign Up button */
+.nav__link.signup {
+  background-color: #6415ff;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 700;
+  
+}
+
+/* ADD Sign-Up Button EFFECTS HERE*/
