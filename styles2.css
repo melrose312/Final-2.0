@@ -16,7 +16,7 @@ body {
   padding: 96px 0;
 }
 
-section {
+section {         /* adds to left and right side of every section. GLOBAL SIDE SPACING */
   padding: 0 32px;
 }
 
@@ -54,8 +54,8 @@ nav {
   justify-content: space-between; /* pushes left and right apart */
   align-items: center; /* vertically centers everything */
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1200px; /* sets so content does not get too wide on large screens */
+  margin: 0 auto; /* centers horizontally to auto margins */
 }
 
 /* Brand (logo + title side by side) */
@@ -113,6 +113,7 @@ nav {
 
 /* HEADER */
 
+/* Header wrapper */
 header .row {
   display: flex;
   justify-content: space-between;
@@ -132,11 +133,12 @@ header .row {
 
 .header__email {
   width: 100%;
-  max-width: 448px;
-  height: 68px;
-  outline: none; /* remove default blue outline */
+  max-width: 400px;
+  margin: 32px 0 0 0;
+  border-radius: 20px;
+  padding-left: 24px;
+  height: 56px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -144,22 +146,19 @@ header .row {
   flex: 1; /* input takes up all available space */
   border: 2px solid rgb(229, 231, 235);
   border-radius: 20px;
-  padding: 0 16px;
+  padding: 0;
   font-size: 16px;
   font-weight: 500;
   height: 100%;
-  outline: none; /* remove default blue outline */
   z-index: 1;
 }
 
 .header__email--button {
   margin: 8px;
   border-radius: 20px;
-  width: 160px;
+  width: 100%;
   z-index: 2;
-  height: calc(100% - 16px);
   font-size: 16px;
-
 }
 
 .header__customers--title {
@@ -171,7 +170,7 @@ header .row {
 }
 
 .header__customers {
-  max-width: 100%;
+  max-width: 1005;
   margin-top: 16px;
   opacity: 0.5;
   
@@ -182,5 +181,8 @@ header .row {
 }
 
 .header__img--wrapper {
-  width: calc(100% - 40%);
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
