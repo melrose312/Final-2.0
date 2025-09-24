@@ -13,10 +13,11 @@ body {
 }
 
 .container {
-  padding: 96px 0;
+  padding: 80px 0;
 }
 
-section {     /* adds to left and right side of every section. GLOBAL SIDE SPACING */
+section {
+  /* adds to left and right side of every section. GLOBAL SIDE SPACING */
   padding: 0 32px;
 }
 
@@ -44,12 +45,21 @@ section {     /* adds to left and right side of every section. GLOBAL SIDE SPACI
   line-height: 1.625;
 }
 
+.btn {
+  background-color: #6415ff;
+  padding: 12px 32px;
+  border: none;
+  border-radius: 500px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+
 .row__narrow {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
 }
-
 
 .section__title {
   font-size: 48px;
@@ -66,8 +76,6 @@ section {     /* adds to left and right side of every section. GLOBAL SIDE SPACI
   color: #7c8ba1;
   line-height: 1.625;
 }
-
-
 
 h1 {
   font-size: 36px;
@@ -200,12 +208,14 @@ header .row {
   position: absolute;
   top: 0;
   bottom: 0;
-  z-index: 1;       /* Layers elements in front\behind each other */
+  z-index: 1; /* Layers elements in front\behind each other */
 }
 
 .header__email--button {
-  margin: 8px;   /*Because the button also has margin: 8px;. That margin applies outside the button on all sides. (8 + 8 = 16) */
-  height: calc(100% - 16px);  /* 100% → the full height of the parent container (.header__email, which is 68px tall) (calc(100% - 16px) makes the button’s height shrink just enough to account for its vertical margins, so it perfectly fits inside the parent container without overflowing.) */
+  margin: 8px; /*Because the button also has margin: 8px;. That margin applies outside the button on all sides. (8 + 8 = 16) */
+  height: calc(
+    100% - 16px
+  ); /* 100% → the full height of the parent container (.header__email, which is 68px tall) (calc(100% - 16px) makes the button’s height shrink just enough to account for its vertical margins, so it perfectly fits inside the parent container without overflowing.) */
   border-radius: 500px;
   width: 160px;
   border: none;
@@ -213,7 +223,7 @@ header .row {
   color: #fff;
   font-weight: 700;
   font-size: 16px;
-  z-index: 2;     /* Layers elements in front\behind each other */
+  z-index: 2; /* Layers elements in front\behind each other */
 }
 
 .header__customers--title {
@@ -251,6 +261,11 @@ FEATURES
   align-items: center;
 }
 
+#features .section__para {
+  text-align: center;
+  max-width: 576px;
+}
+
 .features {
   display: flex;
   flex-wrap: wrap;
@@ -260,6 +275,10 @@ FEATURES
   margin-top: 48px;
 }
 
+.feature__title {
+  margin-bottom: 
+}
+
 .feature__para {
   margin-top: 16px;
   font-size: 16px;
@@ -267,17 +286,18 @@ FEATURES
   color: rgb(124, 139, 161);
   line-height: 2;
   font-weight: 500;
-
 }
 
-.features .section__para {
-  text-align: center;
-  max-width: 576px;
-}
 
 .feature__img {
   width: 24px;
   height: 24px;
+}
+
+.feature__text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
 }
 
 .feature__img--wrapper {
@@ -290,8 +310,28 @@ FEATURES
 .feature__row {
   flex: 0 1 calc(33.333% - 32px); /* 3 per row */
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
+  flex-direction: row; /* side by side instead of stacked */
+  align-items: flex-start; /* align icon with top of text */
+  text-align: left; /* left-align text */
+  gap: 16px;
 }
 
+/* 
+QUALITY
+*/
+
+#quality .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#quality .btn {
+  margin-top: 32px;
+
+}
+
+.quality__description,
+.quality__img--wrapper {
+  width: 50%;
+}
