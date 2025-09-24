@@ -21,6 +21,23 @@ section {
   padding: 0 32px;
 }
 
+.section__tag {
+  font-size: 16px;
+  color: #6415ff;
+  letter-spacing: 1.6px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section__title {
+  font-size: 48px;
+  font-weight: 900;
+  color: rgb(36, 62, 99);
+  line-height: 1.5;
+  margin: 16px 0;
+  letter-spacing: 0.025em;
+}
+
 h1 {
   font-size: 36px;
   color: #1a202c;
@@ -214,15 +231,8 @@ FEATURES
   margin: 0 auto;
 }
 
-.features__tag {
-  font-size: 16px;
-  color: #6415ff;
-  letter-spacing: 1.6px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
 
-.features__title {
+.section__title {
   font-size: 48px;
   font-weight: 900;
   color: rgb(36, 62, 99);
