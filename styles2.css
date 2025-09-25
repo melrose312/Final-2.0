@@ -350,11 +350,7 @@ QUALITY
 STEPS
 */
 
-#steps .row {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 .steps__img--wrapper {
   display: flex;
@@ -362,7 +358,10 @@ STEPS
 }
 
 .step {
-  
+  display: flex;
+  align-items: flex-start;
+  margin-top: 32px;
+
 }
 .step__number {
   color: #cbd5e0;
@@ -372,6 +371,11 @@ STEPS
 }
 
 .step__description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 24px;
+  max-width: 320px;
+  width: 50%;
 }
 
 .step__title {
