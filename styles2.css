@@ -276,7 +276,7 @@ FEATURES
 }
 
 .feature__title {
-  margin-bottom: 
+  margin-bottom: ;
 }
 
 .feature__para {
@@ -287,7 +287,6 @@ FEATURES
   line-height: 2;
   font-weight: 500;
 }
-
 
 .feature__img {
   width: 24px;
@@ -355,4 +354,37 @@ STEPS
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.steps__img--wrapper {
+  display: flex;
+  width: 50%;
+}
+
+.step {
+  
+}
+.step__number {
+  color: #cbd5e0;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.step__description {
+}
+
+.step__title {
+  font-weight: 600;
+  font-size: 20px;
+  color: #243e63;
+  line-height: 1;
+}
+
+.step__para {
+  font-size: 14px;
+  color: #718096;
+  margin-top: 12px;
+  font-weight: 500;
+  line-height: 2;
 }
