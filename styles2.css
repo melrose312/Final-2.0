@@ -16,9 +16,17 @@ body {
   padding: 96px 0;
 }
 
+.row {
+  display: flex;
+  justify-content: space-between; /* pushes left and right apart */
+  align-items: center; /* vertically centers everything */
+  width: 100%;
+  max-width: 1200px; /* sets so content does not get too wide on large screens */
+  margin: 0 auto; /* centers horizontally to auto margins */
+}
+
 section {
-  /* adds to left and right side of every section. GLOBAL SIDE SPACING */
-  padding: 0 32px;
+  padding: 0 32px;  /* adds to left and right side of every section. GLOBAL SIDE SPACING */
 }
 
 .section__tag {
@@ -105,15 +113,7 @@ nav {
   width: 100%;
 }
 
-/* Row: logo on left, links on right */
-.row {
-  display: flex;
-  justify-content: space-between; /* pushes left and right apart */
-  align-items: center; /* vertically centers everything */
-  width: 100%;
-  max-width: 1200px; /* sets so content does not get too wide on large screens */
-  margin: 0 auto; /* centers horizontally to auto margins */
-}
+
 
 /* Brand (logo + title side by side) */
 .nav__logos {
@@ -215,7 +215,7 @@ header .row {
   margin: 8px; /*Because the button also has margin: 8px;. That margin applies outside the button on all sides. (8 + 8 = 16) */
   height: calc(
     100% - 16px
-  ); /* 100% → the full height of the parent container (.header__email, which is 68px tall) (calc(100% - 16px) makes the button’s height shrink just enough to account for its vertical margins, so it perfectly fits inside the parent container without overflowing.) */
+  ); /* 100% = the full height of the parent container (.header__email, which is 68px tall) (calc(100% - 16px) makes the button’s height shrink just enough to account for its vertical margins, so it perfectly fits inside the parent container without overflowing.) */
   border-radius: 500px;
   width: 160px;
   border: none;
@@ -276,7 +276,7 @@ FEATURES
 }
 
 .feature__title {
-  margin-bottom: ;
+ 
 }
 
 .feature__para {
@@ -350,8 +350,6 @@ QUALITY
 STEPS
 */
 
-
-
 .steps__img--wrapper {
   display: flex;
   width: 50%;
@@ -391,4 +389,46 @@ STEPS
   margin-top: 12px;
   font-weight: 500;
   line-height: 2;
+}
+
+/* 
+VALUES
+*/
+
+
+
+.values__list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.value {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+
+
+.value__name {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #243e63;
+}
+
+.value__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.value__img--wrapper {
+  display: flex;
 }
