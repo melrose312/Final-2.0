@@ -412,23 +412,27 @@ VALUES
 }
 
 
-
 .value__name {
   display: flex;
   align-items: center;
-  margin-left: 12px;
+  margin-right: 12px;
   font-size: 20px;
   font-weight: bold;
   color: #243e63;
+}
+
+.value__name img{
+  width: 24px;
 }
 
 .value__icon {
   width: 24px;
   height: 24px;
   margin-right: 8px;
-  flex-shrink: 0;
+  
 }
 
 .value__img--wrapper {
   display: flex;
+  
 }
