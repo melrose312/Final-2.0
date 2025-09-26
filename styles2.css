@@ -102,6 +102,10 @@ img {
   color: #6415ff;
 }
 
+ul {
+  list-style-type: none;
+}
+
 /* NAVIGATION */
 
 /* Nav wrapper */
@@ -451,5 +455,21 @@ PRICING
 #pricing .section__para {
   max-width: 576px;
   text-align: center;
+
+}
+
+.plans {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  
+
+}
+
+.plan {
+  display: flex;
+  flex-direction: column;
 
 }
