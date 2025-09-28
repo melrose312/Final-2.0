@@ -26,7 +26,7 @@ body {
 }
 
 section {
-  padding: 0 32px;  /* adds to left and right side of every section. GLOBAL SIDE SPACING */
+  padding: 0 32px; /* adds to left and right side of every section. GLOBAL SIDE SPACING */
 }
 
 .section__tag {
@@ -116,8 +116,6 @@ nav {
   padding: 24px 0;
   width: 100%;
 }
-
-
 
 /* Brand (logo + title side by side) */
 .nav__logos {
@@ -279,7 +277,6 @@ FEATURES
   margin-top: 48px;
 }
 
-
 .feature__para {
   margin-top: 16px;
   font-size: 16px;
@@ -360,7 +357,6 @@ STEPS
   display: flex;
   align-items: flex-start;
   margin-top: 32px;
-
 }
 .step__number {
   color: #cbd5e0;
@@ -404,16 +400,15 @@ VALUES
   width: 50%;
 }
 
-
 .values__list {
   display: flex;
-  flex-wrap: wrap;       /* allow multiple rows if needed */
-  gap: 24px;             /* space between items */
+  flex-wrap: wrap; /* allow multiple rows if needed */
+  gap: 24px; /* space between items */
   margin: 32px 0;
 }
 
 .value {
-  flex: 1 1 250px;       /* flexible but keeps min width */
+  flex: 1 1 250px; /* flexible but keeps min width */
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -432,7 +427,6 @@ VALUES
   width: 24px;
   height: 24px;
   flex-shrink: 0;
-
 }
 
 .value__para {
@@ -455,21 +449,84 @@ PRICING
 #pricing .section__para {
   max-width: 576px;
   text-align: center;
-
 }
 
 .plans {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   width: 100%;
   position: relative;
-  
+}
 
+.plan__stripe {
+  position: absolute;
+  height: 4px;
 }
 
 .plan {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+}
 
+.plan:nth-child(odd) .plan__duration {
+  color: #a0aec0;
+}
+
+.plan__top {
+  padding: 24px 16px;
+  
+}
+
+.plan__name {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.plan__name,
+.plan__price,
+.plan__duration {
+  font-weight: bold;
+  line-height: 1.625;
+}
+
+.plan__price {
+  font-size: 48px;
+}
+
+.plan__duration {
+  font-size: 16px;
+  letter-spacing: 1.6px;
+}
+
+.plan__target {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+}
+
+.plan__middle {
+  padding: 24px 16px;
+  flex-grow: 1;
+  border-top: 1px solid #e5e7eb;
+  
+}
+
+.plan__feature {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #374151;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.plan__bottom {
+  padding: 20px;
+  border-top: 1px solid #e5e7eb;
 }
