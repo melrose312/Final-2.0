@@ -455,7 +455,9 @@ PRICING
 .plans {
   display: flex;
   justify-content: space-between;
+  max-width: 1100px;
   width: 100%;
+  margin: 0 auto;
   position: relative;
 }
 
@@ -486,7 +488,7 @@ PRICING
 }
 
 .plan:last-child .plan__stripe {
-  background: linear-gradient(to right, #f5576c, #f093fb);
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
 }
 
 /* MIDDLE Business card special background */
@@ -514,6 +516,8 @@ PRICING
   display: flex;
   flex-direction: column;
   text-align: center;
+  flex: 1;
+  max-width: 350px;
   width: 100%;
   background: #fff;
   border: 1px solid #e5e7eb;
@@ -567,7 +571,7 @@ PRICING
   margin-top: 20px;
   font-weight: 500;
   font-size: 16px;
-  color: #374151;
+  color: #718096;
   margin: 8px 0;
   line-height: 1.5;
 }
@@ -600,7 +604,11 @@ PLAN BUTTON COLORS
 
 .plan:first-child .plan__button {
   /* PERSONAL */
-  background: linear-gradient(to right, #43e97b, #38f9d7);
+  background: linear-gradient(
+    115deg,
+    rgb(56, 178, 172) 0%,
+    rgb(129, 230, 217) 100% 100%
+  );
   color: #fff;
 }
 
@@ -612,6 +620,6 @@ PLAN BUTTON COLORS
 
 .plan:last-child .plan__button {
   /* ENTERPRISE */
-  background: linear-gradient(to right, #f5576c, #f093fb);
+  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
   color: #fff;
 }
