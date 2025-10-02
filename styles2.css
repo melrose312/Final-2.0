@@ -259,6 +259,13 @@ header .row {
   align-items: center;
 }
 
+@media (max-width: 1024px) {
+  header .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* 
 FEATURES
 */
@@ -609,6 +616,13 @@ PRICING
   transform: scale(1.02);
 }
 
+@media (max-width: 1024px) {
+  .plans {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 /* 
 PLAN BUTTON COLORS
 */
@@ -825,6 +839,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  width: 100%;
 }
 
 .footer__column {
@@ -857,6 +872,11 @@ footer {
   background: rgb(116, 44, 255);
 }
 
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+
 
 .footer__logo--img {
   height: 32px;
@@ -875,6 +895,30 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer__copyright {
+  color: #cbd5e0;
+  font-weight: 500;
+
+}
+
+.footer__socials {
+  display: flex;
+  align-items: center;
+  
+}
+
+.footer__social--link {
+  margin-left: 16px;
+  padding: 8px;
+  background: #f7fafc;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+
 }
 
 .footer__social--link svg {
