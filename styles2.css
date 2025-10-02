@@ -30,8 +30,8 @@ section {
 }
 
 button {
+  border: none;
   cursor: pointer;
-
 }
 
 .section__tag {
@@ -67,7 +67,6 @@ button {
   color: #fff;
   font-weight: bold;
 }
-
 
 .row__narrow {
   width: 100%;
@@ -174,7 +173,56 @@ nav {
   border-radius: 20px;
   font-weight: 700;
 }
-/* Add Sign-Up Button effects here*/
+
+.nav__link.signup:hover {
+  background-color: rgba(80, 17, 204);
+  transition: 300ms ease;
+}
+
+
+.btn__menu i {
+  background-color: transparent;
+  font-size: 40px;
+  text-align: center;
+  border-style: none;
+  color: #6415ff;
+}
+
+.menu__backdrop {
+  position: absolute;
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+}
+
+.menu__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__link {
+  color: white;
+  font-size: 40px;
+}
+
+.menu__list {
+  padding: 32px 0;
+}
+
+.btn__menu--close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  padding: 8px;
+  color: white:
+}
 
 /* HEADER */
 
@@ -231,7 +279,12 @@ header .row {
   color: #fff;
   font-weight: 700;
   font-size: 16px;
+  transition: all 300ms ease;
   z-index: 2; /* Layers elements in front\behind each other */
+}
+
+.header__email--button:hover {
+  background-color: rgba(60, 13, 153);
 }
 
 .header__customers--title {
@@ -259,10 +312,74 @@ header .row {
   align-items: center;
 }
 
-@media (max-width: 1024px) {
-  header .row {
+@media (max-width: 728px) {
+  #header .row {
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    gap: 32px;
+  }
+
+  .header__description {
+    width: 100%;
+    order: 2;
+  }
+
+  .header__img--wrapper {
+    width: 100%;
+    justify-content: center;
+    order: 3;
+  }
+
+  .header__description h1 {
+    font-size: 24px;
+    line-height: 1.3;
+    margin-top: 16px;
+  }
+
+  .header__description--para {
+    font-size: 15px;
+    margin: 20px auto;
+    max-width: 90%;
+    line-height: 1.5;
+  }
+
+  .header__email {
+    flex-direction: column;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    gap: 12px;
+  }
+
+  .header__email--input {
+    position: static;
+    width: 100%;
+    padding: 16px;
+    border-radius: 500px;
+  }
+
+  .header__email--button {
+    width: 100%;
+    margin: 0;
+    padding: 16px;
+    font-size: 15px;
+    border-radius: 500px;
+  }
+
+  .header__customers--title {
+    margin-top: 32px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .header__customers {
+    max-width: 90%;
+    margin: 16px auto 0;
+  }
+
+  .header__img {
+    width: 100%;
+    max-width: 400px;
   }
 }
 
@@ -270,18 +387,12 @@ header .row {
 FEATURES
 */
 
-#features .row__narrow {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 #features .section__para {
   text-align: center;
   max-width: 576px;
 }
 
-.features {
+.features__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -326,43 +437,33 @@ FEATURES
   gap: 16px;
 }
 
-@media (max-width 1024px) {
-  .feature__row {
-  flex: 0 1 calc(50% - 32px);
-  }
-
-  .features {
-    gap: 24px;
-  }
-}
-
-@media (max-width: 768px) {
-  .features {
-    flex-direction: column;
-    gap: 16px;
-    align-items: stretch;
-  }
-
-  .feature__row {
-    flex: 1 1 100%;
+@media (max-width: 728px) {
+  .features__list {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding-bottom: 18px;
   }
 
-  .feature__img--wrapper {
+  .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .feature__img {
     margin-bottom: 16px;
   }
 
-  .feature__text {
-    align-items: center;
-    text-align: center;
+  .feature__title {
+    font-size: 18px;
+    margin-bottom: 8px;
   }
-
-  .feature__title,
-  .feature__para {
-    font-size: 16px;
+  .feature p {
+    font-size: 14px;
+    line-height: 1.6;
   }
 }
 
@@ -373,6 +474,11 @@ QUALITY
 #quality .btn {
   width: 160px;
   margin-top: 32px;
+}
+
+#quality .btn:hover {
+  background-color: rgba(80, 17, 204);
+  transition: 300ms ease;
 }
 
 #quality .section__title {
@@ -393,9 +499,8 @@ QUALITY
 
 
 
-/* 
-STEPS
-*/
+/* STEPS */ 
+
 
 .steps__img--wrapper {
   display: flex;
@@ -440,6 +545,11 @@ STEPS
 /* 
 VALUES
 */
+
+#values .btn:hover {
+  background-color: rgba(80, 17, 204);
+  transition: 300ms ease;
+}
 
 .values__description {
   width: 50%;
@@ -539,7 +649,11 @@ PRICING
 }
 
 .plan:last-child .plan__stripe {
-  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
 }
 
 /* MIDDLE Business card special background */
@@ -572,7 +686,7 @@ PRICING
   width: 100%;
   padding-left: 32px;
   padding-right: 32px;
-  border-radius: 8px; 
+  border-radius: 8px;
   background: #fff;
   border: 1px solid #e5e7eb;
   position: relative;
@@ -680,21 +794,24 @@ PLAN BUTTON COLORS
 
 .plan:last-child .plan__button {
   /* ENTERPRISE */
-  background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+  background: linear-gradient(
+    115deg,
+    rgb(245, 101, 101) 0%,
+    rgb(254, 178, 178) 100%
+  );
   color: #fff;
 }
-
 
 /* 
 TESTIMONIALS
 */
 
 #testimonials .row {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin: 0 auto;
-max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 .testimonials__description {
@@ -704,9 +821,8 @@ max-width: 1280px;
   width: 50%;
 }
 
-
 .testimonials__img {
-width: 50%;
+  width: 50%;
 }
 
 .testimonial {
@@ -739,7 +855,6 @@ width: 50%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-   
 }
 
 .testimonial__profile {
@@ -781,8 +896,8 @@ width: 50%;
   align-items: center;
   padding: 16px;
   border-radius: 50%;
-  margin: 0 12px; 
-  border: none;  
+  margin: 0 12px;
+  border: none;
 }
 
 .testimonial__button i {
@@ -846,18 +961,19 @@ CALL TO ACTION BUTTON COLORS
   margin-right: 32px;
 }
 
+.start__button:hover:nth-child(1) {
+  background-color: rgba(229, 62, 62);
+}
+
 /* CONTACT US */
 .start__button:nth-child(2) {
   border: 1px solid rgb(160, 174, 192);
-  
 }
 
 .start__button:hover:nth-child(2) {
-  background-color: rgba(247, 250, 252,);
+  background-color: rgba(247, 250, 252);
   opacity: 0.9;
-  transform: scale(1.02);
 }
-
 
 /* 
 FOOTER
@@ -868,7 +984,6 @@ footer {
   background-color: rgb(100, 21, 255);
   position: relative;
 }
-
 
 .footer__columns {
   display: flex;
@@ -912,7 +1027,6 @@ footer {
   align-items: center;
 }
 
-
 .footer__logo--img {
   height: 32px;
   width: 32px;
@@ -936,13 +1050,11 @@ footer {
 .footer__copyright {
   color: #cbd5e0;
   font-weight: 500;
-
 }
 
 .footer__socials {
   display: flex;
   align-items: center;
-  
 }
 
 .footer__social--link {
@@ -953,11 +1065,9 @@ footer {
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
-
 }
 
 .footer__social--link svg {
   height: 16px;
   weight: 16px;
 }
-
