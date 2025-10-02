@@ -111,6 +111,10 @@ ul {
   list-style-type: none;
 }
 
+li {
+  text-decoration: none;
+}
+
 /* NAVIGATION */
 
 /* Nav wrapper */
@@ -186,11 +190,12 @@ nav {
   text-align: center;
   border-style: none;
   color: #6415ff;
+  
 }
 
 .menu__backdrop {
   position: absolute;
-  background-color: gray;
+  background-color: black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,6 +204,11 @@ nav {
   right: 0;
   bottom: 0;
   z-index: 100;
+  visibility: hidden;
+}
+
+.menu--open .menu__backdrop{
+  visibility: visible;
 }
 
 .menu__links {
@@ -223,6 +233,17 @@ nav {
   padding: 8px;
   color: white:
 }
+
+@media (max-width: 550px) {
+  .nav__links ul {
+    display: none;
+  }
+
+  .btn__menu {
+    display: block;
+  }
+}
+
 
 /* HEADER */
 
@@ -951,6 +972,8 @@ START +++ CALL TO ACTION
   line-height: 1.5;
 }
 
+
+
 /* 
 CALL TO ACTION BUTTON COLORS
 */
@@ -963,6 +986,7 @@ CALL TO ACTION BUTTON COLORS
 
 .start__button:hover:nth-child(1) {
   background-color: rgba(229, 62, 62);
+  transition: 300ms ease;
 }
 
 /* CONTACT US */
@@ -973,7 +997,9 @@ CALL TO ACTION BUTTON COLORS
 .start__button:hover:nth-child(2) {
   background-color: rgba(247, 250, 252);
   opacity: 0.9;
-}
+  color: rgb(100, 21, 255);
+  transition: 300ms ease;
+} 
 
 /* 
 FOOTER
