@@ -12,6 +12,10 @@ body {
   background-color: #fff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .container {
   padding: 96px 0;
 }
@@ -99,6 +103,10 @@ p {
   font-size: 18px;
 }
 
+a {
+  text-decoration: none;
+}
+
 img {
   width: 100%;
 }
@@ -168,6 +176,10 @@ nav {
   text-decoration: none;
 }
 
+.nav__link.login {
+  margin-left: 48px;
+}
+
 /* Add link hover effects here*/
 
 .nav__link.signup {
@@ -184,13 +196,20 @@ nav {
 }
 
 
+.btn__menu {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
 .btn__menu i {
-  background-color: transparent;
+  background-color: white;
   font-size: 40px;
   text-align: center;
   border-style: none;
   color: #6415ff;
-  
+   
 }
 
 .menu__backdrop {
@@ -231,10 +250,14 @@ nav {
   right: 20px;
   top: 10px;
   padding: 8px;
-  color: white:
+  background-color: black;
 }
 
-@media (max-width: 550px) {
+.btn--menu--close i {
+  background-color:;
+} 
+
+@media (max-width: 728px) {
   .nav__links ul {
     display: none;
   }
@@ -242,7 +265,14 @@ nav {
   .btn__menu {
     display: block;
   }
+
+  .nav__link.signup {
+    display: none;
+  }
+
 }
+
+
 
 
 /* HEADER */
@@ -518,6 +548,16 @@ QUALITY
   width: 50%;
 }
 
+.quality__grid {
+  transform: translateX() translateY() scaleX(1) scaleY(1);
+
+    width: 80px;
+    height: 80px;
+    fill: rgb(100, 21, 255);
+    --tw-text-opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));    
+}
+
 
 
 /* STEPS */ 
@@ -597,7 +637,7 @@ VALUES
 .value__name {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 4px;
   font-size: 20px;
   font-weight: bold;
   color: #243e63;
@@ -607,6 +647,11 @@ VALUES
   width: 60px;
   height: 60px;
   flex-shrink: 0;
+}
+
+.value__icon--wrapper {
+  border-radius: 50%;
+  border: 1px solid lightgrey;
 }
 
 .value__para {
