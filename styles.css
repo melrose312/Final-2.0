@@ -441,6 +441,12 @@ header .row {
 FEATURES
 */
 
+#features .section__tag {
+  display: flex;
+  justify-content: center;
+}
+
+
 #features .section__para {
   text-align: center;
   max-width: 576px;
