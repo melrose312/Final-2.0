@@ -449,7 +449,13 @@ FEATURES
 
 #features .section__para {
   text-align: center;
-  max-width: 576px;
+  width: 100%;
+  max-width: 1024px;;
+  
+}
+
+#features .section__title {
+  text-align: center;;
 }
 
 .features__list {
